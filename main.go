@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"github.com/gofiber/fiber/v2"
+	//"github.com/gofiber/fiber/v2"
 	"dafilsys/cmd/server"
 	//"dafilsys/internal/configs"
 	"dafilsys/pkg/routes"
@@ -22,7 +22,7 @@ func main() {
 
 	routes.SetupRoutes(app)
 
-	app.Listen(8095)
+	app.Listen(":8095")
 
 	log.Println("Server started on port 8095")
 }
