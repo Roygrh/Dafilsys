@@ -7,7 +7,8 @@ import (
 
 func SetupRoutes(app * fiber.App){
 	app.Get("/documents-list", handlers.GetDocumentsList)
+	app.Get("/documents-search", handlers.DocumentsSearch)
+	app.Post("/document-analysis", handlers.DocumentAnalysis)
 	/*app.Post("/document-registration", handlers.DocumentRegistration)
-	app.Post("/document-analysis", handlers.DocumentSearch)
-	app.Post("/document-analysis", handlers.DocumentAnalysis)*/
+	*/
 }
